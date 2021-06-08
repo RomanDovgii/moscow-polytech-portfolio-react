@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Загрузка проекта</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="./index.html" class="header__logo logo">
+        <picture>
+          <source type="image/webp" srcset="img/polytech-logo/webp/polytech-logo@0.5.webp 0.5x,
+                                           img/polytech-logo/webp/polytech-logo@0.75.webp 0.75x,
+                                           img/polytech-logo/webp/polytech-logo@1.webp 1x,
+                                           img/polytech-logo/webp/polytech-logo@2.webp 2x,
+                                           img/polytech-logo/webp/polytech-logo@3.webp 3x,
+                                           img/polytech-logo/webp/polytech-logo@4.webp 4x,
+                                          ">
+
+          <source type="image/png" srcset="img/polytech-logo/png/polytech-logo@0.5.png 0.5x,
+                                           img/polytech-logo/png/polytech-logo@0.75.png 0.75x,
+                                           img/polytech-logo/png/polytech-logo@1.png 1x,
+                                           img/polytech-logo/png/polytech-logo@2.png 2x,
+                                           img/polytech-logo/png/polytech-logo@3.png 3x,
+                                           img/polytech-logo/png/polytech-logo@4.png 4x,
+                                          ">
+          <img width="125" height="37" src="./img/polytech-logo/png/polytech-logo@1.png" alt="Московский Политех" class="logo__img">
+        </picture>
+      </a>
+      <button class="header__button">
+        <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="26.0052" x2="38" y2="26.0052" stroke="white" stroke-width="1.7"/>
+          <line y1="12.7491" x2="38" y2="12.7491" stroke="white" stroke-width="1.7"/>
+          <line y1="1.15" x2="38" y2="1.15" stroke="white" stroke-width="1.7"/>
+        </svg>
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
+      <nav class="header__navigation navigation">
+        <a href="#" class="navigation__link">Поступающим</a>
+        <a href="#" class="navigation__link">Обучающимся</a>
+        <a href="#" class="navigation__link">Работникам</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h1 class="promo__heading">Загрузите ваш проект<br>
+                                    на портфолио Московского Политеха
+        </h1>
+        <p class="promo__text">
+          Процесс загрузки невероятно прост — <br>
+          всего лишь заполните форму ниже.
+        </p>
+      </div>
+      <div class="promo__wrapper promo__wrapper--anchor">
+        <a href="#upload-form" class="promo__anchor">Загрузить проект</a>
+      </div>
+    </section>
+    <section class="upload-form" id="upload-form">
+      <h2 class="visually-hidden">Форма загрузки проекта</h2>
+      <form action="" class="upload-form__form">
+        <label class="upload-form__label upload-form__label--name">
+          <span class="upload-form__name">Название проекта</span>
+          <input class="upload-form__input upload-form__input--name" type="text" name="name" placeholder="до 30 символов" required>
+
+        </label>
+        <label class="upload-form__label upload-form__label--discipline">
+          <span class="upload-form__name">Название дисциплины</span>
+          <input class="upload-form__input upload-form__input--discipline" type="text" name="discipline" placeholder="до 30 символов" required>
+
+        </label>
+        <label class="upload-form__label upload-form__label--description">
+          <span class="upload-form__name">Описание проекта</span>
+          <textarea class="upload-form__input upload-form__input--description" name="description" placeholder="до 200 символов" required></textarea>
+
+        </label>
+        <label class="upload-form__label upload-form__label--tags">
+          <span class="upload-form__name">Теги</span>
+          <input class="upload-form__input upload-form__input--tags" type="text" name="tags" placeholder="до 8 тегов">
+        </label>
+        <label class="upload-form__label upload-form__label--cover">
+          <span class="upload-form__name">Обложка</span>
+          <span class="upload-form__description">Файл jpeg, png, gif с пропорциями 3:4</span>
+          <input class="upload-form__input upload-form__input--cover" type="file" name="cover" accept="image/jpeg, image/png, image/gif" required>
+          <div class="upload-form__visual-input"></div>
+        </label>
+        <label class="upload-form__label upload-form__label--project">
+          <span class="upload-form__name">Проект</span>
+          <span class="upload-form__description">До 10 файлов jpeg, png, gif с пропорциями 3:4</span>
+          <input class="upload-form__input upload-form__input--project" type="file" name="project" accept="image/jpeg, image/png, image/gif" multiple required>
+          <div class="upload-form__visual-input"></div>
+        </label>
+        <label class="upload-form__label upload-form__label--video">
+          <span class="upload-form__name">Видео</span>
+          <input class="upload-form__input upload-form__input--video" type="file" name="video" accept="video/*" required>
+          <div class="upload-form__visual-input"></div>
+        </label>
+
+        <p class="upload-form__alert">
+          Проект появится в общем доступе после того, как пройдет модерацию.
+        </p>
+
+        <button class="upload-form__submit" type="submit">Загрузить проект</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
