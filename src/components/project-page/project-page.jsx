@@ -1,22 +1,15 @@
 import React from "react";
 import Header from "../header/header";
+import Promo from "../promo/promo";
 
 const ProjectPage = (props) => {
   return (
     <React.Fragment>
       <Header/>
       <main>
-        <section className="promo">
-          <div className="promo__wrapper">
-            <h1 className="promo__heading">Внутренне познание и брутализм</h1>
-            <p className="promo__text">
-              Что есмь внутреннее познание и зачем оно нужно?
-              Кому оно может помочь, а главное - зачем?
-              Есть ли внутри душа или лишь безграничная пустота, которая находится также снаружи и отображается в виде брутализма, доминирующего в нашей современной архитектуре.
-              К сожалению, попытки разнообразить его цветами не позволяют изменить суть его, которая полна серости и уныния.
-            </p>
-          </div>
-        </section>
+        <Promo
+          isProject = {true}
+        />
         <section className="student">
           <div className="student__wrapper student__wrapper--project">
             <div className="student__content student__content--project">

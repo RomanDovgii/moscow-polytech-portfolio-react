@@ -1,25 +1,15 @@
 import React from "react";
 import Header from "../header/header";
+import Promo from "../promo/promo";
 
 const UploadPage = (props) => {
   return (
     <React.Fragment>
       <Header/>
       <main>
-        <section className="promo">
-          <div className="promo__wrapper">
-            <h1 className="promo__heading">Загрузите ваш проект<br/>
-                                        на портфолио Московского Политеха
-            </h1>
-            <p className="promo__text">
-              Процесс загрузки невероятно прост — <br/>
-              всего лишь заполните форму ниже.
-            </p>
-          </div>
-          <div className="promo__wrapper promo__wrapper--anchor">
-            <a href="#upload-form" className="promo__anchor">Загрузить проект</a>
-          </div>
-        </section>
+        <Promo
+          isUpload = {true}
+        />
         <section className="upload-form" id="upload-form">
           <h2 className="visually-hidden">Форма загрузки проекта</h2>
           <form action="" className="upload-form__form">

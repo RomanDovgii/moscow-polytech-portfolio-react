@@ -8,7 +8,7 @@ const StudentPage = (props) => {
       <main>
         <section className="promo promo--student">
           <div className="promo__wrapper">
-            <h1 className="promo__heading">Портфолио студента</h1>
+            <h1 className="promo__heading">Портфолио студента <span className="visually-hidden">Иванова Ивана Ивановича</span></h1>
           </div>
         </section>
         <section className="student">

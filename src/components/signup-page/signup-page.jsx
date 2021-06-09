@@ -1,25 +1,15 @@
 import React from "react";
 import Header from "../header/header";
+import Promo from "../promo/promo";
 
 const SignupPage = (props) => {
   return (
     <React.Fragment>
       <Header/>
       <main>
-        <section className="promo">
-          <div className="promo__wrapper">
-            <h1 className="promo__heading">Регистрация</h1>
-            <p className="promo__text">
-              Форма буквально на минуту,<br/>
-              которая откроет вам доступ<br/>
-              ко всем возможностям<br/>
-              портфолио Московского Политеха
-            </p>
-          </div>
-          <div className="promo__wrapper promo__wrapper--anchor">
-            <a href="#signup-form" className="promo__anchor">Зарегистрироваться</a>
-          </div>
-        </section>
+        <Promo
+          isSignup = {true}
+        />
         <section className="signup-form" id="signup-form">
           <h2 className="visually-hidden">Форма Регистрации пользователя</h2>
           <form action="" className="signup-form__form">

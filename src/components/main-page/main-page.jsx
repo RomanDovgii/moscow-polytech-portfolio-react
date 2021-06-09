@@ -1,19 +1,15 @@
 import React from "react";
 import Header from "../header/header";
+import Promo from "../promo/promo";
 
 const MainPage = (props) => {
   return (
     <React.Fragment>
         <Header/>
         <main>
-          <section className="promo promo--catalog">
-            <div className="promo__wrapper">
-              <h1 className="promo__heading">Портфолио <br/>Московского Политеха</h1>
-              <p className="promo__text">
-                Портфолио по проектам студентво с направления Графика, Графический, Транспортный и&nbsp;Промышленный дизайн и других.
-              </p>
-            </div>
-          </section>
+          <Promo
+            isMain = {true}
+          />
           <section className="filter">
             <div className="filter__wrapper">
               <h2 className="visually-hidden">Фильтры</h2>

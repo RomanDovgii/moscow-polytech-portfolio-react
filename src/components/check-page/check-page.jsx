@@ -1,20 +1,17 @@
 import React from "react";
 import Header from "../header/header";
+import Promo from "../promo/promo";
 
 const CheckPage = (props) => {
   return (
     <React.Fragment>
       <Header/>
       <main>
-        <section className="promo promo--upload">
-          <div className="promo__wrapper">
-            <h1 className="promo__heading">Проверка проекта <br/> от студента <span className="promo__group">группы 191-324</span> <br/>Иванова Ивана Ивановича <br/> с направления промышленный дизайн</h1>
-            <p className="promo__text">
-              Просим быть объективными при проверке работы, а также недопускать некачественные изображения или же тексты, содержащие мат, грамматические ошибки или любые другие опечатки, так как после данной проверки всё станет общедоступным, а, следовательно, начнет представлять Московский Политех.
-            </p>
-          </div>
-        </section>
+        <Promo
+          isCheck = {true}
+        />
         <section className="check-form">
+          <h2 className="visually-hidden">Форма проверки работы</h2>
           <form action="" className="check-form__form">
             <section className="check-form__section check-form__section--name">
               <h2 className="check-form__name">Название проекта</h2>
