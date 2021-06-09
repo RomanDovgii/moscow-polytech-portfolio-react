@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import Header from "../header/header";
 import Promo from "../promo/promo";
 
@@ -45,13 +46,13 @@ const CheckPage = (props) => {
                 <div className="hashtags__wrapper">
                   <ul className="hashtags__list">
                     <li className="hashtags__item">
-                      <a href="">Брутализм</a>
+                      <Link to="">Брутализм</Link>
                     </li>
                     <li className="hashtags__item">
-                      <a href="">Самопознание</a>
+                      <Link to="">Самопознание</Link>
                     </li>
                     <li className="hashtags__item">
-                      <a href="">Демагогия</a>
+                      <Link to="">Демагогия</Link>
                     </li>
                   </ul>
                 </div>

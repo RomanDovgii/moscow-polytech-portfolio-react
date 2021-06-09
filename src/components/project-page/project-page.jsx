@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../header/header";
 import Promo from "../promo/promo";
+import Catalog from "../catalog/catalog";
 
 const ProjectPage = (props) => {
   return (
@@ -120,43 +121,10 @@ const ProjectPage = (props) => {
           </div>
         </section>
 
-        <section className="catalog catalog--project">
-          <div className="catalog__wrapper">
-            <h2 className="catalog__heading">Похожие проекты</h2>
-            <ul className="catalog__list catalog__list--project">
-              <li className="catalog__project-card project-card">
-                <a href="./project.html" className="project-card__link">
-                  <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" className="project-card__img"/>
-                </a>
-                <a className="project-card__heading" href="./project.html">Название проекта</a>
-                <div className="project-card__info">
-                  <a className="project-card__student" href="./student.html">Иван Иванович Иванов</a>
-                  <a className="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
-                </div>
-              </li>
-              <li className="catalog__project-card project-card">
-                <a href="./project.html" className="project-card__link">
-                  <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" className="project-card__img"/>
-                </a>
-                <a className="project-card__heading" href="./project.html">Название проекта</a>
-                <div className="project-card__info">
-                  <p className="project-card__student" href="./student.html">Иван Иванович Иванов</p>
-                  <p className="project-card__discipline">Проектирование крупных информационных проектов</p>
-                </div>
-              </li>
-              <li className="catalog__project-card project-card">
-                <a href="./project.html" className="project-card__link">
-                  <img src="https://picsum.photos/seed/picsum/400/300" width="400" height="300" alt="" className="project-card__img"/>
-                </a>
-                <a className="project-card__heading" href="./project.html">Название проекта</a>
-                <div className="project-card__info">
-                  <a className="project-card__student" href="./student.html">Иван Иванович Иванов</a>
-                  <a className="project-card__discipline" href="#">Проектирование крупных информационных проектов</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <Catalog
+            cardCount = {3}
+            isProject = {true}
+        />
       </main>
     </React.Fragment>
   );

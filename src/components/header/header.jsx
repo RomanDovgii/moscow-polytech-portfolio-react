@@ -1,10 +1,17 @@
 import React from "react";
+import {Link, useLocation} from "react-router-dom";
 
 const Header = (props) => {
+  const {pathname} = useLocation();
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <header className="header">
       <div className="header__wrapper">
-        <a href="./index.html" className="header__logo logo">
+        <Link to="/" className="header__logo logo">
           <picture>
             <source type="image/webp" srcSet="img/polytech-logo/webp/polytech-logo@0.5.webp 0.5x,
                                             img/polytech-logo/webp/polytech-logo@0.75.webp 0.75x,
@@ -23,7 +30,7 @@ const Header = (props) => {
                                             "/>
             <img width="125" height="37" src="./img/polytech-logo/png/polytech-logo@1.png" alt="Московский Политех" className="logo__img"/>
           </picture>
-        </a>
+        </Link>
         <button className="header__button">
           <svg width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <line y1="26.0052" x2="38" y2="26.0052" stroke="white" strokeWidth="1.7"/>
@@ -35,9 +42,8 @@ const Header = (props) => {
           </span>
         </button>
         <nav className="header__navigation navigation">
-          <a href="#" className="navigation__link">Поступающим</a>
-          <a href="#" className="navigation__link">Обучающимся</a>
-          <a href="#" className="navigation__link">Работникам</a>
+          <Link to="/signup" className="navigation__link">Зарегистрироваться</Link>
+          <Link to="/login" className="navigation__link">Войти</Link>
         </nav>
       </div>
     </header>

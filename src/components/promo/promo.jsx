@@ -1,11 +1,13 @@
 import React from "react";
 import LoginForm from "../login-form/login-form";
 import {promoType} from "../../types/types";
+import {HashLink} from "react-router-hash-link";
 
 const Promo = ({isCheck, isLogin, isMain, isProject, isSignup, isUpload, isStudent}) => {
   let heading;
   let text;
   let button;
+  let anchor;
 
   switch (true) {
     case isMain:
@@ -23,6 +25,7 @@ const Promo = ({isCheck, isLogin, isMain, isProject, isSignup, isUpload, isStude
       heading = <>Регистрация</>;
       text = <>Форма буквально на минуту,<br/>которая откроет вам доступ<br/>ко всем возможностям<br/>портфолио Московского Политеха</>;
       button = <>Зарегистрироваться</>;
+      anchor = `#signup-form`;
       break;
     case isProject:
       heading = <>Внутренне познание и брутализм</>;
@@ -37,6 +40,7 @@ const Promo = ({isCheck, isLogin, isMain, isProject, isSignup, isUpload, isStude
       text = <>Процесс загрузки невероятно прост — <br/>
       всего лишь заполните форму ниже.</>;
       button = <>Загрузить проект</>;
+      anchor = `#upload-form`;
       break;
     case isCheck:
       heading = <>Проверка проекта <br/> от студента <span className="promo__group">группы 191-324</span> <br/>Иванова Ивана Ивановича <br/> с направления промышленный дизайн</>;
@@ -72,7 +76,13 @@ const Promo = ({isCheck, isLogin, isMain, isProject, isSignup, isUpload, isStude
         {
           button ?
           <div className="promo__wrapper promo__wrapper--anchor">
-            <a href="#upload-form" className="promo__anchor">Загрузить проект</a>
+            <HashLink
+              smooth
+              to={anchor}
+              className="promo__anchor"
+            >
+              {button}
+            </HashLink>
           </div> :
           ``
         }

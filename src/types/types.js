@@ -13,3 +13,8 @@ export const promoType = {
 export const loginType = {
   block: PropTypes.string
 };
+
+export const catalogType = {
+  cardCount: PropTypes.number,
+  isProject: PropTypes.bool
+};
