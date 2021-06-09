@@ -22,3 +22,7 @@ export const catalogType = {
 export const controlsType = {
   isStudent: PropTypes.bool
 };
+
+export const studentType = {
+  isProject: PropTypes.bool
+};

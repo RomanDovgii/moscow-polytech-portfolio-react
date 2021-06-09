@@ -3,6 +3,7 @@ import Header from "../header/header";
 import Promo from "../promo/promo";
 import Catalog from "../catalog/catalog";
 import Controls from "../controls/controls";
+import Student from "../student/student";
 
 const ProjectPage = (props) => {
   return (
@@ -12,17 +13,9 @@ const ProjectPage = (props) => {
         <Promo
           isProject = {true}
         />
-        <section className="student">
-          <div className="student__wrapper student__wrapper--project">
-            <div className="student__content student__content--project">
-              <img src="https://i.pravatar.cc/133" alt="Иванов Иван Иванович" width="133" height="133" className="student__img"/>
-              <div className="student__info">
-                <h1 className="student__name">Иванов Иван Иванович</h1>
-                <p className="student__specialization">Графический дизайн, 3 курс</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Student
+        isProject = {true}
+        />
 
         <section className="big-slider">
           <div className="big-slider__wrapper">
