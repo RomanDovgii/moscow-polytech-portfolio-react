@@ -1,9 +1,9 @@
 import React from "react";
 import ProjectCard from "../project-card/project-card";
 import {catalogType} from "../../types/types";
+import Controls from "../controls/controls";
 
 const Catalog = ({cardCount, isProject}) => {
-  console.log(isProject);
   let cards = [];
 
   for (let index = 0; index < cardCount; index++) {
@@ -43,12 +43,6 @@ const Catalog = ({cardCount, isProject}) => {
             <span className="visually-hidden">Следующая страница</span>
           </a>
         </div>
-      </div>:
-      ``
-      }
-      {!isProject ?
-      <div className="catalog__controls controls">
-        <a href="#" className="controls__more">Больше работ</a>
       </div>:
       ``
       }

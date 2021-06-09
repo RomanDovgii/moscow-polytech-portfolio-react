@@ -59,7 +59,7 @@ const Promo = ({isCheck, isLogin, isMain, isProject, isSignup, isUpload, isStude
 
 
   return (
-    <section className="promo">
+    <section className={isStudent ? `promo promo--student` : `promo`}>
         <div className="promo__wrapper">
           <h1 className="promo__heading">
             {heading}

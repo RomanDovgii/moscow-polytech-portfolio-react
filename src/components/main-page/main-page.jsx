@@ -3,6 +3,7 @@ import Header from "../header/header";
 import Promo from "../promo/promo";
 import Filter from "../filter/filter";
 import Catalog from "../catalog/catalog";
+import Controls from "../controls/controls";
 
 const MainPage = (props) => {
   return (
@@ -16,6 +17,7 @@ const MainPage = (props) => {
           <Catalog
             cardCount = {9}
           />
+          <Controls/>
         </main>
       </React.Fragment>
   );

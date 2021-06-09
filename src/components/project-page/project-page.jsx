@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../header/header";
 import Promo from "../promo/promo";
 import Catalog from "../catalog/catalog";
+import Controls from "../controls/controls";
 
 const ProjectPage = (props) => {
   return (
@@ -125,6 +126,7 @@ const ProjectPage = (props) => {
             cardCount = {3}
             isProject = {true}
         />
+        <Controls/>
       </main>
     </React.Fragment>
   );

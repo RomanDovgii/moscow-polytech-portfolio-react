@@ -1,17 +1,17 @@
 import React from "react";
 import Header from "../header/header";
 import Catalog from "../catalog/catalog";
+import Promo from "../promo/promo";
+import Controls from "../controls/controls";
 
 const StudentPage = (props) => {
   return (
     <React.Fragment>
       <Header/>
       <main>
-        <section className="promo promo--student">
-          <div className="promo__wrapper">
-            <h1 className="promo__heading">Портфолио студента <span className="visually-hidden">Иванова Ивана Ивановича</span></h1>
-          </div>
-        </section>
+        <Promo
+          isStudent = {true}
+        />
         <section className="student">
           <div className="student__wrapper">
             <div className="student__content">
@@ -75,14 +75,9 @@ const StudentPage = (props) => {
         <Catalog
             cardCount = {3}
         />
-
-        <section className="controls controls--student">
-          <div className="controls__wrapper">
-            <a href="#" className="controls__more">Больше работ</a>
-            <a href="#" className="controls__download">Скачать портфолио</a>
-            <a href="#" className="controls__message">Написать студенту</a>
-          </div>
-        </section>
+        <Controls
+          isStudent = {true}
+        />
       </main>
     </React.Fragment>
   );

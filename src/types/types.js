@@ -18,3 +18,7 @@ export const catalogType = {
   cardCount: PropTypes.number,
   isProject: PropTypes.bool
 };
+
+export const controlsType = {
+  isStudent: PropTypes.bool
+};
