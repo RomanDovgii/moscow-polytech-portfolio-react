@@ -25,96 +25,96 @@ const Filter = (props) => {
           <div className="filter__break"></div>
           <label className="filter__select select">
             <span className="visually-hidden">Поиск по...</span>
-            <select name="" id="" className="select__input">
-              <option value="" className="select__option" defaultValue disabled hidden>Поиск по проектам </option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
+            <select className="select__input">
+              <option className="select__option" defaultValue disabled hidden>Поиск по проектам </option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
             </select>
           </label>
           <label className="filter__select select">
             <span className="visually-hidden">Поиск по...</span>
-            <select name="" id="" className="select__input">
-              <option value="" className="select__option" defaultValue disabled hidden>Поиск по проектам </option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-            </select>
-          </label>
-
-          <label className="filter__select select">
-            <span className="visually-hidden">Поиск по...</span>
-            <select name="" id="" className="select__input">
-              <option value="" className="select__option" defaultValue disabled hidden>Поиск по проектам </option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
+            <select className="select__input">
+              <option className="select__option" defaultValue disabled hidden>Поиск по проектам </option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
             </select>
           </label>
 
           <label className="filter__select select">
             <span className="visually-hidden">Поиск по...</span>
-            <select name="" id="" className="select__input">
-              <option value="" className="select__option" defaultValue disabled hidden>Поиск по проектам </option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
+            <select className="select__input">
+              <option className="select__option" defaultValue disabled hidden>Поиск по проектам </option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
             </select>
           </label>
 
           <label className="filter__select select">
             <span className="visually-hidden">Поиск по...</span>
-            <select name="" id="" className="select__input">
-              <option value="" className="select__option" defaultValue disabled hidden>Поиск по проектам </option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
+            <select className="select__input">
+              <option className="select__option" defaultValue disabled hidden>Поиск по проектам </option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
             </select>
           </label>
 
           <label className="filter__select select">
             <span className="visually-hidden">Поиск по...</span>
-            <select name="" id="" className="select__input">
-              <option value="" className="select__option" defaultValue disabled hidden>Поиск по проектам </option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
-              <option value="" className="select__option">Элемент 1</option>
+            <select className="select__input">
+              <option className="select__option" defaultValue disabled hidden>Поиск по проектам </option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+            </select>
+          </label>
+
+          <label className="filter__select select">
+            <span className="visually-hidden">Поиск по...</span>
+            <select className="select__input">
+              <option className="select__option" defaultValue disabled hidden>Поиск по проектам </option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
+              <option className="select__option">Элемент 1</option>
             </select>
           </label>
         </form>

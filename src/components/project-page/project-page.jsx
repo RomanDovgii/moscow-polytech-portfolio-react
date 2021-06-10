@@ -18,6 +18,7 @@ const ProjectPage = (props) => {
         />
 
         <section className="big-slider">
+          <h2 className="visually-hidden">Изображения с проекта</h2>
           <div className="big-slider__wrapper">
             <div className="big-slider__controls">
               <button className="big-slider__button big-slider__button--prev">

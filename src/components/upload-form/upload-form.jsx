@@ -13,33 +13,36 @@ const UploadForm = (props) => {
         <label className="upload-form__label upload-form__label--discipline">
           <span className="upload-form__name">Название дисциплины</span>
           <input className="upload-form__input upload-form__input--discipline" type="text" name="discipline" placeholder="до 30 символов" required/>
-
         </label>
+
         <label className="upload-form__label upload-form__label--description">
           <span className="upload-form__name">Описание проекта</span>
           <textarea className="upload-form__input upload-form__input--description" name="description" placeholder="до 200 символов" required></textarea>
-
         </label>
+
         <label className="upload-form__label upload-form__label--tags">
           <span className="upload-form__name">Теги</span>
           <input className="upload-form__input upload-form__input--tags" type="text" name="tags" placeholder="до 8 тегов"/>
         </label>
+
         <label className="upload-form__label upload-form__label--cover">
           <span className="upload-form__name">Обложка</span>
           <span className="upload-form__description">Файл jpeg, png, gif с пропорциями 3:4</span>
           <input className="upload-form__input upload-form__input--cover" type="file" name="cover" accept="image/jpeg, image/png, image/gif" required/>
-          <div className="upload-form__visual-input"></div>
+          <span className="upload-form__visual-input"></span>
         </label>
+
         <label className="upload-form__label upload-form__label--project">
           <span className="upload-form__name">Проект</span>
           <span className="upload-form__description">До 10 файлов jpeg, png, gif с пропорциями 3:4</span>
           <input className="upload-form__input upload-form__input--project" type="file" name="project" accept="image/jpeg, image/png, image/gif" multiple required/>
-          <div className="upload-form__visual-input"></div>
+          <span className="upload-form__visual-input"></span>
         </label>
+
         <label className="upload-form__label upload-form__label--video">
           <span className="upload-form__name">Видео</span>
           <input className="upload-form__input upload-form__input--video" type="file" name="video" accept="video/*" required/>
-          <div className="upload-form__visual-input"></div>
+          <span className="upload-form__visual-input"></span>
         </label>
 
         <p className="upload-form__alert">
